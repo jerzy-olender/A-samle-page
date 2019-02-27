@@ -1,2 +1,2 @@
 live
- https://jerzy-olender.github.io/A-samle-page/
+https://jerzy-olender.github.io/A-sample-page/
