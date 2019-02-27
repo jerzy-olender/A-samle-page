@@ -136,3 +136,17 @@ a {
 
 body {
   overflow-x: hidden; }
+
+.container {
+  width: 940px;
+  margin: 0 auto; }
+
+.header .top_separator {
+  height: 10px;
+  background-color: #666; }
+
+.header .header_title {
+  padding: 89px 0 83px 0;
+  text-align: center;
+  font-size: 79px;
+  color: #222; }
