@@ -161,27 +161,53 @@ body {
   color: #000;
   text-align: justify; }
 
-.content .content_items {
-  display: flex;
-  justify-content: space-between;
-  width: calc(100% + 20px);
-  margin-left: -10px; }
-  .content .content_items .content_item {
-    margin: 0 10px;
-    width: calc(100% / 3 - 20px); }
-    .content .content_items .content_item .item_heading {
-      font-size: 38px;
-      margin-bottom: 29px; }
-    .content .content_items .content_item .item_heading.blue {
-      color: #02b9fc; }
-    .content .content_items .content_item .item_heading.yellow {
-      color: #ffcf3a;
-      line-height: 44px; }
-    .content .content_items .content_item .item_heading.red {
-      color: #ff5b5b; }
-    .content .content_items .content_item .image_text_item {
+.content {
+  padding-bottom: 320px; }
+  .content .content_items {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% + 20px);
+    margin-left: -10px; }
+    .content .content_items .content_item {
       display: flex;
-      align-items: center;
-      margin-bottom: 20px; }
-      .content .content_items .content_item .image_text_item .image_wrapper {
-        margin-right: 20px; }
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin: 0 10px;
+      width: calc(100% / 3 - 20px); }
+      .content .content_items .content_item .content_wrapper .item_heading {
+        font-size: 38px;
+        margin-bottom: 29px; }
+      .content .content_items .content_item .content_wrapper .item_heading.blue {
+        color: #02b9fc; }
+      .content .content_items .content_item .content_wrapper .item_heading.yellow {
+        color: #ffcf3a;
+        line-height: 44px; }
+      .content .content_items .content_item .content_wrapper .item_heading.red {
+        color: #ff5b5b; }
+      .content .content_items .content_item .content_wrapper .image_text_item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px; }
+        .content .content_items .content_item .content_wrapper .image_text_item .image_wrapper {
+          margin-right: 20px; }
+      .content .content_items .content_item .read_more {
+        display: block;
+        margin-top: 29px;
+        font-size: 14px;
+        color: #bdbdbd; }
+
+.footer {
+  background-color: #666;
+  font-size: 16px;
+  color: #fff;
+  padding-top: 54px; }
+  .footer .footer_items {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 72px; }
+    .footer .footer_items .footer_item {
+      width: 25%; }
+  .footer .footer_copyright {
+    padding-bottom: 17px;
+    text-align: center; }
