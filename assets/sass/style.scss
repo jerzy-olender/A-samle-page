@@ -27,7 +27,7 @@
     }
 }
 
-.paragraph_item {
+.paragraph_item, .full.show {
     font-size: 14px;
     line-height: 22.04px;
     color: #000;
@@ -63,6 +63,8 @@
                 .item_heading.yellow {
                     color: #ffcf3a;
                     line-height: 44px;
+                    position: relative;
+                    top: -3px;
                 }
 
                 .item_heading.red {
@@ -86,6 +88,7 @@
                 margin-top: 29px;
                 font-size: 14px;
                 color: #bdbdbd;
+                cursor: pointer;
             }
         }
 
@@ -111,3 +114,7 @@
         text-align: center;
     }
 }
+.full, .less{display:none;}
+.show {display:block;}
+.hide{ display:none}
+

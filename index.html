@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>This is just a sample page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -37,9 +38,10 @@
                             quis
                             dui. Mauris suscipit euismod urna, eget feugiat tellus imperdiet vitae. Vestibulum.
                         </p>
-
+                        <p class="next_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis felis fermentum, dictum odio ut.</p>
+                        <p class="full"></p>
                     </div>
-                    <a class="read_more">— read more</a>
+                    <a id="more" class="read_more"><span class="more">— read more</span><span class="less">— read less</span></a>
                 </div>
                 <div class="content_item">
                     <div class="content_wrapper">
@@ -106,7 +108,22 @@
             <p class="footer_copyright">Copyright © 2018 Sample & Pack, Inc.</p>
         </div>
     </footer>
+    <script>
+        $(document).ready(function () {
+            var fullText = $(".next_text").text();
+            var partText = "";
 
+            $(".full").text(fullText);
+            $(".next_text").text(partText);
+
+            $("#more").click(function () {
+                $(".full").toggleClass("show");
+                $(".part").toggleClass("hide");
+                $(".more").toggleClass("hide");
+                $(".less").toggleClass("show");
+            });
+        });
+    </script>
 </body>
 
 </html>

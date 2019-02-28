@@ -155,7 +155,7 @@ body {
     height: 1px;
     background-color: #ebebeb; }
 
-.paragraph_item {
+.paragraph_item, .full.show {
   font-size: 14px;
   line-height: 22.04px;
   color: #000;
@@ -182,7 +182,9 @@ body {
         color: #02b9fc; }
       .content .content_items .content_item .content_wrapper .item_heading.yellow {
         color: #ffcf3a;
-        line-height: 44px; }
+        line-height: 44px;
+        position: relative;
+        top: -3px; }
       .content .content_items .content_item .content_wrapper .item_heading.red {
         color: #ff5b5b; }
       .content .content_items .content_item .content_wrapper .image_text_item {
@@ -195,7 +197,8 @@ body {
         display: block;
         margin-top: 29px;
         font-size: 14px;
-        color: #bdbdbd; }
+        color: #bdbdbd;
+        cursor: pointer; }
 
 .footer {
   background-color: #666;
@@ -211,3 +214,12 @@ body {
   .footer .footer_copyright {
     padding-bottom: 17px;
     text-align: center; }
+
+.full, .less {
+  display: none; }
+
+.show {
+  display: block; }
+
+.hide {
+  display: none; }
