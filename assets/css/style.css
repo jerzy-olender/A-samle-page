@@ -155,7 +155,8 @@ body {
     height: 1px;
     background-color: #ebebeb; }
 
-.paragraph_item, .full.show {
+.paragraph_item,
+.full.show {
   font-size: 14px;
   line-height: 22.04px;
   color: #000;
@@ -215,7 +216,8 @@ body {
     padding-bottom: 17px;
     text-align: center; }
 
-.full, .less {
+.full,
+.less {
   display: none; }
 
 .show {
@@ -223,3 +225,12 @@ body {
 
 .hide {
   display: none; }
+
+@media (max-width: 963px) {
+  .container {
+    width: 80%; }
+  .content .content_items {
+    flex-wrap: wrap; }
+    .content .content_items .content_item {
+      margin: 0 auto;
+      width: 51%; } }
