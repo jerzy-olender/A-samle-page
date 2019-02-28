@@ -1,1 +1,2 @@
-# A samle page
+live
+https://jerzy-olender.github.io/A-sample-page/
