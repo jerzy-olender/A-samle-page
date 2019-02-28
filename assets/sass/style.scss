@@ -91,7 +91,25 @@
                 margin-top: 29px;
                 font-size: 14px;
                 color: #bdbdbd;
-                cursor: pointer;
+                &:hover{
+                    cursor: pointer;  
+                }
+
+            }
+            .read_more.blue{
+                &:hover{
+                    color: #02b9fc;
+                }
+            }
+            .read_more.yellow{
+                &:hover{
+                    color: #ffcf3a;
+                }
+            }
+            .read_more.red{
+                &:hover{
+                    color: #ff5b5b;
+                }
             }
         }
 
@@ -108,7 +126,7 @@
         display: flex;
         justify-content: space-between;
         padding-bottom: 72px;
-
+        flex-wrap: wrap;
         .footer_item {
             width: 25%;
         }
@@ -145,6 +163,19 @@
             .content_item {
                 margin: 0 auto;
                 width: 51%;
+                .read_more{
+                    margin-bottom: 29px;
+                }
+            }   
+        }
+    }
+
+    .footer {
+        .footer_items {
+            .footer_item {
+                width: 51%;
+                margin: 20px auto;
+                text-align: center;
             }
         }
     }
