@@ -38,10 +38,12 @@
                             quis
                             dui. Mauris suscipit euismod urna, eget feugiat tellus imperdiet vitae. Vestibulum.
                         </p>
-                        <p class="next_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis felis fermentum, dictum odio ut.</p>
+                        <p class="next_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis felis
+                            fermentum, dictum odio ut.</p>
                         <p class="full"></p>
                     </div>
-                    <a id="more" class="read_more blue"><span class="more">— read more</span><span class="less">— read less</span></a>
+                    <a id="more" class="read_more blue"><span class="more">— read more</span><span class="less">— read
+                            less</span></a>
                 </div>
                 <div class="content_item">
                     <div class="content_wrapper">
@@ -55,8 +57,14 @@
                         <p class="paragraph_item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget
                             ex
                             nulla. Integer ullamcorper nibh lorem, ut porttitor mi sagittis eget.</p>
+                        <p class="next_text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis felis
+                            fermentum, dictum odio ut.</p>
+
+                        <p class="full2"></p>
                     </div>
-                    <a class="read_more yellow">— read more</a>
+                    <a id="more2" class="read_more yellow"><span class="more2">— read more</span><span class="less2">—
+                            read
+                            less</span></a>
                 </div>
                 <div class="content_item">
                     <div class="content_wrapper">
@@ -74,8 +82,14 @@
                             justo, sed efficitur nisl fringilla eget. Integer a mi quis lectus vulputate tempus quis
                             quis
                             dui. Mauris suscipit euismod urna, eget feugiat tellus imperdiet vitae. Vestibulum.</p>
+                        <p class="next_text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis felis
+                            fermentum, dictum odio ut.</p>
+
+                        <p class="full3"></p>
                     </div>
-                    <a class="read_more red">— read more</a>
+                    <a id="more3" class="read_more red"><span class="more3">— read more</span><span class="less3">—
+                            read
+                            less</span></a>
                 </div>
 
             </div>
@@ -110,18 +124,21 @@
     </footer>
     <script>
         $(document).ready(function () {
-            var fullText = $(".next_text").text();
-            var partText = "";
+            function more(text1, text2, element, more, less) {
+                var fullText = $(text1).text();
+                var partText = "";
 
-            $(".full").text(fullText);
-            $(".next_text").text(partText);
-
-            $("#more").click(function () {
-                $(".full").toggleClass("show");
-                $(".part").toggleClass("hide");
-                $(".more").toggleClass("hide");
-                $(".less").toggleClass("show");
-            });
+                $(text2).text(fullText);
+                $(text1).text(partText);
+                $(element).click(function () {
+                    $(text2).toggleClass("show");
+                    $(more).toggleClass("hide");
+                    $(less).toggleClass("show");
+                });
+            }
+            more('.next_text', '.full', '#more', '.more', '.less');
+            more('.next_text2', '.full2', '#more2', '.more2', '.less2');
+            more('.next_text3', '.full3', '#more3', '.more3', '.less3');
         });
     </script>
 </body>

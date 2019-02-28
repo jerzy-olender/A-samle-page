@@ -156,7 +156,7 @@ body {
     background-color: #ebebeb; }
 
 .paragraph_item,
-.full.show {
+.full.show, .full2.show, .full3.show {
   font-size: 14px;
   line-height: 22.04px;
   color: #000;
@@ -224,15 +224,12 @@ body {
     padding-bottom: 17px;
     text-align: center; }
 
-.full,
-.less {
+.full, .full2, .full3,
+.less, .less2, .less3, .hide {
   display: none; }
 
 .show {
   display: block; }
-
-.hide {
-  display: none; }
 
 @media (max-width: 963px) {
   .container {
