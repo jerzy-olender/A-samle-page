@@ -220,6 +220,10 @@ body {
     flex-wrap: wrap; }
     .footer .footer_items .footer_item {
       width: 25%; }
+      .footer .footer_items .footer_item .footer_heading {
+        color: #fff; }
+        .footer .footer_items .footer_item .footer_heading:hover {
+          color: #000; }
   .footer .footer_copyright {
     padding-bottom: 17px;
     text-align: center; }

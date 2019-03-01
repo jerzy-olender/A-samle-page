@@ -129,6 +129,12 @@
         flex-wrap: wrap;
         .footer_item {
             width: 25%;
+            .footer_heading{
+                color: #fff; 
+                &:hover{
+                    color: #000;
+                }
+            }
         }
     }
 
